@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Hair Studio | Toronto's Premier Salon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">LUXE HAIR STUDIO</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book Now</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Transform Your Look</h1>
+            <p>Toronto's Premier Hair & Beauty Destination</p>
+            <a href="#booking" class="cta-button">Book Appointment</a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3>Hair Styling</h3>
+                    <p>Expert cuts and styles for every occasion</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💆</div>
+                    <h3>Color & Highlights</h3>
+                    <p>Vibrant colors and natural-looking highlights</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💅</div>
+                    <h3>Treatments</h3>
+                    <p>Nourishing treatments for healthy hair</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👰</div>
+                    <h3>Bridal Services</h3>
+                    <p>Make your special day unforgettable</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Work</h2>
+            <div class="slider">
+                <div class="slider-container" id="sliderContainer">
+                    <div class="slide active">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800" alt="Salon interior">
+                        <div class="slide-caption">Modern Styling Station</div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800" alt="Hair styling">
+                        <div class="slide-caption">Expert Hair Styling</div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800" alt="Color treatment">
+                        <div class="slide-caption">Premium Color Treatments</div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=800" alt="Salon atmosphere">
+                        <div class="slide-caption">Luxurious Atmosphere</div>
+                    </div>
+                </div>
+                <button class="slider-btn prev" id="prevBtn">❮</button>
+                <button class="slider-btn next" id="nextBtn">❯</button>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Appointment</h2>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="haircut">Haircut & Styling</option>
+                            <option value="color">Color & Highlights</option>
+                            <option value="treatment">Hair Treatment</option>
+                            <option value="bridal">Bridal Services</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LUXE HAIR STUDIO</h3>
+                    <p>123 Queen Street West<br>Toronto, ON M5H 2M9</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 9am - 8pm<br>Sat-Sun: 10am - 6pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Phone: (416) 555-0123<br>Email: info@luxehair.ca</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxe Hair Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
